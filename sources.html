@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Climate Change</title>
-    <link rel="stylesheet" href="css/sourc.css">
+    <link rel="stylesheet" href="css/index.css">
 </head> 
 <body>
     <header>
-        <h1>Climate Change</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Introduction</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="timeline.html">Timeline</a></li>
                 <li><a href="sources.html">Sources</a></li>
                 <li><a href="impact.html">Impact in the Philippines</a></li>
@@ -30,5 +29,27 @@
         <li><strong>Agriculture:</strong> The source of greenhouse gas emissions from agriculture is livestock such as cows, agricultural soils, and rice production.</li>
         <li><strong>Land use and forestry:</strong> In general, plants and soil can act as an overall "sink" while absorbing CO2 from the atmosphere. Unfortunately, they can serve as source of greenhouse gas emissions when they are being burned or cut down which ends up adding CO2 emissions to the atmosphere.</li>
     </ol>
+    <div class="back-to-top" id="back-to-top">&#8679;
+        <script>      // Show or hide the back-to-top button
+            window.onscroll = function() {
+                var backToTop = document.getElementById('back-to-top');
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    backToTop.style.display = 'block';
+                } else {
+                    backToTop.style.display = 'none';
+                }
+            };
+        
+            // Scroll to the top when the back-to-top button is clicked
+            document.getElementById('back-to-top').onclick = function() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            };
+</script>      
+    </div>
+    
 </div>
+<footer>
+    <p class="para">&copy; 2024 Climate Change Awareness Initiative</p>
+</footer>
 </body>

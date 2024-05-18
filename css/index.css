@@ -7,12 +7,18 @@ body {
     color: #000000;
     font-size: 1.2em; /* Increase base font size */
     line-height: 1.6; /* Increase line height for better readability */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up the full viewport height */
 }
 
 header {
-    background: rgba(34, 49, 63, 0.9);
+    background: rgb(2, 99, 62);
     padding: 10px 0;
     text-align: center;
+    position: sticky; /* Make the header sticky */
+    top: 0; /* Stick the header to the top */
+    z-index: 1000; /* Ensure the header stays above other content */
 }
 
 header h1 {
@@ -22,10 +28,13 @@ header h1 {
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(2, 99, 62);
 }
 
 nav ul li {
-    display: inline;
     margin-right: 20px;
 }
 
@@ -35,21 +44,31 @@ nav ul li a {
     font-weight: bold;
 }
 
-.container {
+.container  {
+    flex: 1; /* This makes the container take up the available space */
     padding: 20px;
     margin: 20px auto;
     width: 80%;
     border-radius: 10px;
+    background: white;
+}
+.section {
+    flex: 1; /* This makes the container take up the available space */
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    background: white;
 }
 
 footer {
     text-align: center;
     padding: 10px 0;
     background: rgba(34, 49, 63, 0.9);
-    position: fixed;
+    color: #f4f4f4;
     width: 100%;
     bottom: 0;
-    color: #f4f4f4;
+    position: relative; /* Changed to relative to avoid overlapping issues */
 }
 
 .back-to-top {
@@ -67,4 +86,15 @@ footer {
 
 .back-to-top:hover {
     background-color: #16a085;
+}
+h1, h2, p, ul, ol {
+    text-align: justify; /* Justify text for better readability */
+}
+.para {
+    text-align: center;
+    padding: 10px 0;
+    color: #f4f4f4;
+    width: 100%;
+    bottom: 0;
+    position: relative; /* Changed to relative to avoid overlapping issues */
 }

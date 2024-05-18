@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Climate Change</title>
-    <link rel="stylesheet" href="css/miti.css">
+    <link rel="stylesheet" href="css/index.css">
+
 </head>
 <body>
     <header>
-        <h1>Climate Change</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Introduction</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="timeline.html">Timeline</a></li>
                 <li><a href="sources.html">Sources</a></li>
                 <li><a href="impact.html">Impact in the Philippines</a></li>
@@ -29,6 +29,36 @@
         <li><strong>National Framework Strategy on Climate Change:</strong> Envisioned to develop the adaptation capacity of communities funded by the GTZ Germany.</li>
     </ul>
     <p>With these set of programs and everyone's engagement, we can all combat the destructive impact of climate change. Nothing is too hard for a resilient and adaptable country.</p>
+    <div class="back-to-top" id="back-to-top">&#8679;
+        <script>      // Show or hide the back-to-top button
+            window.onscroll = function() {
+                var backToTop = document.getElementById('back-to-top');
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    backToTop.style.display = 'block';
+                } else {
+                    backToTop.style.display = 'none';
+                }
+            };
+        
+            // Scroll to the top when the back-to-top button is clicked
+            document.getElementById('back-to-top').onclick = function() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            };
+</script>      
+    </div>
+    
 </div>
 </div>
+<footer>
+    <p class="para">&copy; 2024 Climate Change Awareness Initiative</p>
+    <ul class="members">
+        <li>Member 1: Client Daguplo</li>
+        <li>Member 2: Earl Kristian Equibal</li>
+        <li>Member 3: John Rey Ancero</li>
+        <li>Member 4: James Stanley Dimarucut</li>
+        <li>Member 5: Lorenz Lord Toring</li>
+        <li>Member 6: Richard Casinillo Jr.</li>
+    </ul>
+</footer>
 </body>

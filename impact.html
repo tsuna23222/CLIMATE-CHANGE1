@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Climate Change</title>
-    <link rel="stylesheet" href="css/impact.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <header>
-        <h1>Climate Change</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Introduction</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="timeline.html">Timeline</a></li>
                 <li><a href="sources.html">Sources</a></li>
                 <li><a href="impact.html">Impact in the Philippines</a></li>
@@ -37,5 +36,28 @@
         
         <h3>Health</h3>
         <p>The further increase in global temperature and emergence of devastating natural calamities due to climate change expose the people to water-based and vector-borne diseases. Moreover, people are also prone to pulmonary illnesses and cardiovascular diseases. Malnutrition is expected to become severe in areas with frequent occurrences of extreme events that disturb adequate food supply and support for health services.</p>
+        
     </div>
+    <div class="back-to-top" id="back-to-top">&#8679;
+        <script>      // Show or hide the back-to-top button
+            window.onscroll = function() {
+                var backToTop = document.getElementById('back-to-top');
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    backToTop.style.display = 'block';
+                } else {
+                    backToTop.style.display = 'none';
+                }
+            };
+        
+            // Scroll to the top when the back-to-top button is clicked
+            document.getElementById('back-to-top').onclick = function() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            };
+</script>      
+    </div>
+    <footer>
+        <p class="para">&copy; 2024 Climate Change Awareness Initiative</p>
+    </footer>
+    
     </body>
