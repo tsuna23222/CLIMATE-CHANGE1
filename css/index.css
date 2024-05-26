@@ -192,7 +192,7 @@ h1, h2, p, ul, ol {
     margin: auto;
 }
 .event {
-    margin-bottom: 20px;
+    margin-bottom: 100px;
 }
 #timeline .event img {
     max-width: 100%;
@@ -208,9 +208,41 @@ h1, h2, p, ul, ol {
     margin: auto;
 }
 .event {
-    margin-bottom: 20px;
+    margin-bottom: 100px;
 }
 #sources .event img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+    width: 600px; /* Adjust the width as needed */
+    height: auto; /* Adjust the height automatically to maintain aspect ratio */
+}
+
+#impact {
+    max-width: 800px;
+    margin: auto;
+}
+.event {
+    margin-bottom: 100px;
+}
+#impact .event img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+    width: 600px; /* Adjust the width as needed */
+    height: auto; /* Adjust the height automatically to maintain aspect ratio */
+}
+
+#mitigation {
+    max-width: 800px;
+    margin: auto;
+}
+.event {
+    margin-bottom: 100px;
+}
+#mitigation .event img {
     max-width: 100%;
     height: auto;
     display: block;
